@@ -49,6 +49,9 @@
         <sonar.organization>spring-petclinic-rest</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
+        <!-- RASP Java Agent -->
+        <rasp-java-agent.version>1.7.0</rasp-java-agent.version>
+
     </properties>
 
     <dependencies>
@@ -174,6 +177,15 @@
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
+        </dependency>
+
+        <!-- RASP Java Agent — runtime protection via -javaagent -->
+        <dependency>
+            <groupId>io.github.lmcnova</groupId>
+            <artifactId>rasp-java-agent</artifactId>
+            <version>${rasp-java-agent.version}</version>
+            <classifier>all</classifier>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
