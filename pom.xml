@@ -50,7 +50,7 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
         <!-- RASP Java Agent -->
-        <rasp-java-agent.version>1.7.1</rasp-java-agent.version>
+        <rasp-java-agent.version>1.7.3</rasp-java-agent.version>
 
     </properties>
 
